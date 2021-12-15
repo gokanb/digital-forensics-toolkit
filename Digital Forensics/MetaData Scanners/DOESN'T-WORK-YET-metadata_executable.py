@@ -2,18 +2,24 @@ import argparse
 from datetime import date, datetime
 from pefile import PE
 
-'''
+
+'''         ----___----I WROTE THIS BYMYSELF AND NEEDS TO IMPROVED----___---
+
+
 Description: 
                         --> This script will get metadata from EXE files. 
 To run this script      --> python metadata_executable.py
 example                 --> python metadata_executable.py  blablabla.exe
 '''
+
+
 __authors__ = ["Gokan Bektas"]
 __date__ = 20211215
 __version__ = 1.0   # version can be always change so make sure you update after make a change. it has to be in quation. 
 __description__ = 'A Tool to extract metadata from EXE files'
 
 parser = argparse.ArgumentParser(description=__description__, epilog="Developed by {} on {}".format(", ".join(__authors__),__date__))
+parser.add_argument("EXE_FILE", help="Path to exe file")
 parser.add_argument("-v", "--verbose", help="Increase verbosity of output", action='store_true', default=False)
 args = parser.parse_args()
 
