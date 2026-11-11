@@ -1,0 +1,6 @@
+# Keep language stats focused on the actual code (Python)
+docs/** linguist-documentation
+*.svg linguist-documentation
+sample_data/** linguist-vendored
+*.csv linguist-vendored
+*.json linguist-vendored
