@@ -1,0 +1,7 @@
+Pillow>=9.0
+PyPDF2>=3.0
+beautifulsoup4>=4.11
+mutagen>=1.45
+pefile>=2023.2
+requests>=2.31
+simplekml>=1.3
